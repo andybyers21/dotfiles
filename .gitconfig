@@ -1,0 +1,14 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = andybyers21
+	email = andy.byers21@gmail.com
+[core]
+	excludesfile = /Users/andybyers/.gitignore_global
+[color]
+	ui = auto
+[alias]
+	ac = !git add . && git commit -m
