@@ -1,3 +1,7 @@
+export PATH="/usr/local/anaconda3/bin:$PATH"
+
+
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -103,9 +107,3 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 
-
-# tcl-tk locating
-export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
-export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
-
-export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk/lib/pkgconfig"
