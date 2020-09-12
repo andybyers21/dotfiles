@@ -1,0 +1,109 @@
+{
+    "atomKeymap.promptV3Features": true,
+    "editor.formatOnPaste": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "clock.dateFormat": "HH:MM",
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.occurrencesHighlight": false,
+    "editor.renderLineHighlight": "gutter",
+    "editor.matchBrackets": "never",
+    "bracket-pair-colorizer-2.showHorizontalScopeLine": false,
+    "telemetry.enableTelemetry": false,
+    "workbench.startupEditor": "none",
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.renameOnType": true,
+    "tabnine.experimentalAutoImports": true,
+    "editor.tabSize": 4,
+    "git.autofetch": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "git.confirmSync": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.hover.enabled": true,
+    "editor.hover.sticky": true,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO",
+            "color": "#282a36",
+            "backgroundColor": "#50fa7b",
+            "overviewRulerColor": "rgba(255,189,42,0.8)"
+        },
+        {
+            "text": "FIXME",
+            "color": "#282a36",
+            "backgroundColor": "#ffb86c",
+            "overviewRulerColor": "rgba(240,98,146,0.8)"
+        },
+        {
+            "text": "NOTE",
+            "color": "#282a36",
+            "backgroundColor": "#ff5555",
+            "overviewRulerColor": "rgba(240,98,146,0.8)"
+        }
+    ],
+    "prettier.printWidth": 80,
+    "prettier.useTabs": false,
+    "prettier.singleQuote": true,
+    "eslint.alwaysShowStatus": true,
+    "eslint.codeAction.showDocumentation": {
+        "enable": true
+    },
+    "prettier.jsxSingleQuote": true,
+    "[json]": {
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace"
+    },
+    "editor.codeLens": false,
+    "omnisharp.path": "latest",
+    "window.zoomLevel": 0,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Gruvbox Dark Medium",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#1A1A1A",
+        "statusBar.noFolderBackground": "#212121",
+        "statusBar.debuggingBackground": "#263238"
+    },
+    "terminal.integrated.fontSize": 16,
+    "spellright.addToSystemDictionary": true,
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "spellright.ignoreFiles": [
+        "**/.gitignore",
+        "**/.spellignore"
+    ],
+    "spellright.spellignore": [
+        "toc"
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.fontFamily": "'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.formatOnSave": true,
+    "editor.fontWeight": 200,
+    "vim.cursorStylePerMode.insert": "block",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.cursorStylePerMode.replace": "block",
+    "vim.cursorStylePerMode.visual": "block",
+    "vim.cursorStylePerMode.visualblock": "block",
+    "vim.cursorStylePerMode.visualline": "block",
+    "vim.leader": "/",
+    "editor.minimap.enabled": false,
+    "python.languageServer": "Microsoft",
+    "python.linting.enabled": true,
+}
