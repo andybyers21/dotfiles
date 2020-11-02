@@ -12,3 +12,4 @@
 	ui = auto
 [alias]
 	ac = !git add . && git commit -m
+	s = !git status
