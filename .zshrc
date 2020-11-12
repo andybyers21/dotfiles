@@ -58,7 +58,7 @@ COMPLETION_WAITING_DOTS="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -98,6 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+################################
+
+# TK things
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 
 if command -v pyenv 1>/dev/null 2>&1; then
@@ -105,7 +108,10 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
 
-# Virtualenvwrapper things
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-source /usr/local/bin/virtualenvwrapper.sh
+# pyenv stuff
+PATH=$(pyenv root)/shims:$PATH
+
+# pandoc_resume
+export PATH="$PATH:/Library/TeX/texbin/"
+
+
