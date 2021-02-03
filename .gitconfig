@@ -12,4 +12,7 @@
 	ui = auto
 [alias]
 	ac = !git add . && git commit -m
-	s = !git status
+    s = !git status
+    p = !git push
+[init]
+	defaultBranch = main
