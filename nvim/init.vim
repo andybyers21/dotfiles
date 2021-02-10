@@ -34,8 +34,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chun-yang/auto-pairs'
 Plug 'tpope/vim-fugitive'
-Plug 'https://github.com/prashanthellina/follow-markdown-links'
 Plug 'dracula/vim'
+Plug 'alexpearce/nvim-follow-markdown-links', { 'do': ':UpdateRemotePlugins' }
 call plug#end()
 
 " dracula color scheme
@@ -84,3 +84,11 @@ inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
+
+" follow markdown links
+command! FollowMarkdownLink call FollowMarkdownLink()
+command! PreviousMarkdownBuffer call PreviousMarkdownBuffer()
+autocmd FileType markdown nnoremap <script> <CR> :FollowMarkdownLink<CR>
+autocmd FileType markdown nnoremap <script> <BS> :PreviousMarkdownBuffer<CR>
+let g:follow_markdown_links#extensions = ['.md', '.markdown']
+
