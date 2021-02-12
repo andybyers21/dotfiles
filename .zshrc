@@ -52,5 +52,20 @@ export PATH=$PATH:$GOPATH
 export PATH=$PATH:$GOPATH/bin
 
 # ALIASES
-alias nv="nvim"
 alias v="nvim"
+alias vv="nvim ."
+
+# Auytomate daily notes
+daily() {
+    cd /Users/andybyers/Documents/Nota/2021_Notes
+    touch "$(date +"%F")".md
+    nvim "$(date +"%F")".md
+}
+
+# Daily note push
+notes push() {
+    cd /Users/andybyers/Documents/Nota/2021_Notes
+    git ac "$(date +"%F, %T")"
+    git push
+}
+

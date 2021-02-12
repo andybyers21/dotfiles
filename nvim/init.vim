@@ -36,6 +36,7 @@ Plug 'chun-yang/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'dracula/vim'
 Plug 'alexpearce/nvim-follow-markdown-links', { 'do': ':UpdateRemotePlugins' }
+Plug 'walterl/downtools'
 call plug#end()
 
 " dracula color scheme
@@ -69,7 +70,6 @@ let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
 let g:airline_powerline_fonts=1
-" let g:airline_theme='dracula'
 
 " COC
 " prettier
@@ -92,3 +92,5 @@ autocmd FileType markdown nnoremap <script> <CR> :FollowMarkdownLink<CR>
 autocmd FileType markdown nnoremap <script> <BS> :PreviousMarkdownBuffer<CR>
 let g:follow_markdown_links#extensions = ['.md', '.markdown']
 
+" downtools
+let g:downtools_disable_vlink_mapping = 1
