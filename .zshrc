@@ -56,11 +56,11 @@ alias v="nvim"
 alias vv="nvim ."
 
 # Auytomate daily notes
-daily() {
-    cd /Users/andybyers/Documents/Nota/2021_Notes
-    touch "$(date +"%F")".md
-    nvim "$(date +"%F")".md
-}
+# daily() {
+#     cd /Users/andybyers/Documents/Nota/2021_Notes
+#     touch "$(date +"%F")".md
+#     nvim "$(date +"%F")".md
+# }
 
 # Daily note push
 notes push() {
