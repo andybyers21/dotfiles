@@ -25,6 +25,11 @@ set gdefault            " Use 'g' flag by default with :s/foo/bar/.
 set magic               " Use 'magic' patterns (extended regular expressions).
 map q <Nop>         " Turn off recording
 
+" Buffer Navigation
+nnoremap <Leader>p :bp<CR>      " previous buffer
+nnoremap <Leader>n :bn<CR>      " next buffer
+nnoremap <Leader>f :bf<CR>      " first buffer
+
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'
@@ -42,6 +47,8 @@ call plug#end()
 
 " vimwiki
 let g:vimwiki_list = [{'path': '~/Documents/Nota/2021_Notes/', 'syntax': 'markdown', 'ext': '.md'}]
+" add .md to markdown links
+let g:vimwiki_markdown_link_ext = 1
 
 " dracula color scheme
 if (has("termguicolors"))
