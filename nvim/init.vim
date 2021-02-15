@@ -35,9 +35,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'chun-yang/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'dracula/vim'
-Plug 'alexpearce/nvim-follow-markdown-links', { 'do': ':UpdateRemotePlugins' }
-Plug 'walterl/downtools'
+" Plug 'alexpearce/nvim-follow-markdown-links', { 'do': ':UpdateRemotePlugins' }
+" Plug 'walterl/downtools'
+Plug 'vimwiki/vimwiki'
 call plug#end()
+
+" vimwiki
+let g:vimwiki_list = [{'path': '~/Documents/Nota/2021_Notes/', 'syntax': 'markdown', 'ext': '.md'}]
 
 " dracula color scheme
 if (has("termguicolors"))
@@ -54,8 +58,8 @@ let NERDTreeShowHidden=1
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
 " Start NERDTree, unless a file or session is specified, eg. vim -S session_file.vim.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists('s:std_in') && v:this_session == '' | NERDTree | endif
 
 " airline settings
 let g:airline#extensions#tabline#enabled = 1
