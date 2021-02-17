@@ -54,6 +54,7 @@ export PATH=$PATH:$GOPATH/bin
 # ALIASES
 alias v="nvim"
 alias vv="nvim ."
+alias :q="exit"
 
 # Auytomate daily notes
 # daily() {
