@@ -31,15 +31,21 @@ map q <Nop>                     " Turn off recording
 nnoremap o o<Esc>
 nnoremap O O<Esc>
 
-" Use <C-L> to clear the highlighting of :set hlsearch.
-if maparg('<C-L>', 'n') ==# ''
-  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
-endif
+" Add line above and below, move to center 
+map <Leader>o oO
+
+" Move to end of current line
+map - $
 
 " Buffer Navigation
 nnoremap <Leader>p :bp<CR>      " previous buffer
 nnoremap <Leader>n :bn<CR>      " next buffer
 nnoremap <Leader>f :bf<CR>      " first buffer
+
+" Use <C-L> to clear the highlighting of :set hlsearch.
+if maparg('<C-L>', 'n') ==# ''
+  nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+endif
 
 """""""""""""""
 """ PLUGINS """
