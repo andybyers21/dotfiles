@@ -83,6 +83,7 @@ colorscheme dracula
 """"""""""""""""
 
 map <C-n> :NERDTreeToggle<CR>
+let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeStatusline = ''
 let NERDTreeShowHidden=1
 
