@@ -56,17 +56,18 @@ alias v="nvim"
 alias vv="nvim ."
 alias :q="exit"
 
-# Auytomate daily notes
-# daily() {
-#     cd /Users/andybyers/Documents/Nota/2021_Notes
-#     touch "$(date +"%F")".md
-#     nvim "$(date +"%F")".md
-# }
+# Shortcut to init.vim from anywhere
+nvi() {
+    cd /Users/andybyers/.config/nvim
+    nvim init.vim
+    cd -
+}
 
 # Daily note push
 notes push() {
     cd /Users/andybyers/Documents/Nota/2021_Notes
     git ac "$(date +"%F, %T")"
     git push
+    cd -
 }
 
