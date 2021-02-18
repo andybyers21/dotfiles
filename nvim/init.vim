@@ -26,6 +26,10 @@ map q <Nop>                     " Turn off recording
 """"""""""""""
 """ REMAPS """
 """"""""""""""
+ 
+" Map <leader> to <space> while also keeping <bslash>#
+let mapleader =" "
+nmap <bslash> <space>
 
 " Don't switch to insert mode after insert new line
 nnoremap o o<Esc>
