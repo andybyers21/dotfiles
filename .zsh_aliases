@@ -17,3 +17,7 @@ notes push() {
     cd -
 }
 
+# Shortcut to activate Wall of Text python environment
+wotenv() {
+    source ~/Developer/python-virtual-environments/wallOfText_env/bin/activate
+}
