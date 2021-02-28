@@ -38,6 +38,9 @@ nnoremap O O<Esc>
 " Add line above and below, move to center 
 map <Leader>o oO
 
+" Add two lines (for python)
+map <Leader>O OoO
+
 " Move to end of current line
 map - $
 
@@ -65,14 +68,26 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'dracula/vim'
     Plug 'vimwiki/vimwiki'
+    Plug 'sakshamgupta05/vim-todo-highlight'
 call plug#end()
 
 """""""""""""""
 """ VimWiki """
 """""""""""""""
 
+set nocompatible
+filetype plugin on
+syntax on
+
+" Disable the creation of temporary wikis in all markdown files
+let g:vimwiki_global_ext = 0
+
+" give vimwiki access to all keymaps
+let g:vimwiki_key_mappings = { 'all_maps': 1, }
+
 " Set location & format
-let g:vimwiki_list = [{'path': '~/Documents/Nota/2021_Notes/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Documents/Nota/2021_Notes/', 
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
 
 " add .md to markdown links
 let g:vimwiki_markdown_link_ext = 1
