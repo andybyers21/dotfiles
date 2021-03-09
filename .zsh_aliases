@@ -9,6 +9,12 @@ nvi() {
     cd -
 }
 
+# Recursively remove .DS_Store files from the current working directory and all sub
+# directories.
+clean ds() {
+    find . -name '.DS_Store' -type f -delete
+}
+
 # Daily note push
 notes push() {
     cd /Users/andybyers/Documents/Nota/2021_Notes
@@ -19,5 +25,16 @@ notes push() {
 
 # Shortcut to activate Wall of Text python environment
 wotenv() {
+    cd /Users/andybyers/Developer/wall-of-text
     source ~/Developer/python-virtual-environments/wallOfText_env/bin/activate
+    tab
+    cd /Users/andybyers/Developer/wall-of-text
+    source ~/Developer/python-virtual-environments/wallOfText_env/bin/activate
+    python app.py
+}
+
+# Launch Andy Web Intranet
+launch intranet() {
+    cd /Users/andybyers/Developer/maykind_intranet
+    hugo server --minify --theme book
 }
