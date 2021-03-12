@@ -4,7 +4,6 @@
 
 syntax on
 set number                      " show line numbers
-set formatoptions+=o            " Continue comment marker in new lines.
 set textwidth=80                " Hard-wrap long lines as you type them.
 set modeline                    " Enable modeline.
 set noerrorbells                " No beeps
@@ -18,16 +17,29 @@ set incsearch                   " Shows the match while typing
 set hlsearch                    " Highlight found searches
 set ignorecase                  " Search case insensitive...
 set smartcase                   " ... but not when search pattern contains upper case characters
-set tabstop=4 shiftwidth=4 expandtab
 set gdefault                    " Use 'g' flag by default with :s/foo/bar/.
 set magic                       " Use 'magic' patterns (extended regular expressions).
 map q <Nop>                     " Turn off recording
+
+""""""""""
+"""TABS"""
+""""""""""
+
+set tabstop=4 shiftwidth=4 expandtab
+autocmd Filetype markdown setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+
+"""""""""""""""""
+"""SPELL CHECK"""
+"""""""""""""""""
+
+" Auto spell check, GB, for markdown files
+autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_gb
 
 """"""""""""""
 """ REMAPS """
 """"""""""""""
  
-" Map <leader> to <space> while also keeping <bslash>#
+" Map <leader> to <space> while also keeping <bslash>
 let mapleader =" "
 nmap <bslash> <space>
 
@@ -42,6 +54,7 @@ map <Leader>o oO
 map <Leader>O OoO
 
 " Move to end of current line
+map <Leader>RHL <Plug>VimwikiRemoveHeaderLevel      " Remove vimwiki mapping
 map - $
 
 " Buffer Navigation
