@@ -25,8 +25,10 @@ map q <Nop>                     " Turn off recording
 """TABS"""
 """"""""""
 
-set tabstop=4 shiftwidth=4 expandtab
-autocmd Filetype markdown setlocal expandtab tabstop=4 shiftwidth=4 softtabstop=4
+set expandtab tabstop=4 shiftwidth=4 softtabstop=4
+autocmd Filetype markdown setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype hmtl setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 """""""""""""""""
 """SPELL CHECK"""
