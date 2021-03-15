@@ -64,6 +64,12 @@ nnoremap <Leader>p :bp<CR>      " previous buffer
 nnoremap <Leader>n :bn<CR>      " next buffer
 nnoremap <Leader>f :bf<CR>      " first buffer
 
+" Window Navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " Use <C-L> to clear the highlighting of :set hlsearch.
 if maparg('<C-L>', 'n') ==# ''
   nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
