@@ -90,6 +90,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'dracula/vim'
     Plug 'vimwiki/vimwiki'
     Plug 'sakshamgupta05/vim-todo-highlight'
+    Plug 'preservim/nerdcommenter'
 call plug#end()
 
 """""""""""""""
@@ -172,4 +173,18 @@ inoremap <silent><expr> <Tab>
 
 " Prettier
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+"""""""""""""""""""""
+""" NERDCommenter """
+"""""""""""""""""""""
+
+" leader c to comment, leader u to uncomment
+" nnoremap <leader>c <leader>cc
+" nnoremap <leader>u <leader>cu
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespce = 1
 
