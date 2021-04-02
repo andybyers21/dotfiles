@@ -20,7 +20,10 @@ COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # PLUGINS
-plugins=(git iterm2 osx z extract)
+plugins=(git iterm2 osx z extract vi-mode)
+
+VI_MODE_SET_CURSOR=true
+vi_mode_prompt_info=true
 
 # SOURCE
 source $ZSH/oh-my-zsh.sh
