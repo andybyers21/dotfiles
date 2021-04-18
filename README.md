@@ -18,5 +18,6 @@ Custom ZSH terminal commands
 | `nvi`             | Shortcut to nvim init.vim from anywhere                               |
 | `clean ds`        | Recursively remove `.DS_Store` files from pwd and all sub directories |
 | `notes push`      | Push vim-wiki to GitHub from anywhere                                 |
+| `mdwiki`          | View personal notes in the browser                                    |
 | `wotenv`          | Shortcut to activate Wall of Text python environment                  |
-| `launch intranet` | Launch Andy Web Intranet                                              |
+| `launch intranet` | Launch Maykind Intranet                                               |

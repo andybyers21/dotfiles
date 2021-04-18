@@ -23,6 +23,14 @@ notes push() {
     cd -
 }
 
+# View Notes as web page
+mdwiki() {
+    cd /Users/andybyers/Documents/Nota/2021_Notes
+    open http://localhost:8080/index.html
+    http-server
+    cd -
+}
+
 # Shortcut to activate Wall of Text python environment
 wotenv() {
     cd /Users/andybyers/Developer/wall-of-text
@@ -36,5 +44,8 @@ wotenv() {
 # Launch Andy Web Intranet
 launch intranet() {
     cd /Users/andybyers/Developer/maykind_intranet
+    tab
+    cd /Users/andybyers/Developer/maykind_intranet
+    open http://localhost:1313
     hugo server --minify --theme book
 }
